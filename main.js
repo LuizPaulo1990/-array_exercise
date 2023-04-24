@@ -1,15 +1,16 @@
 let valores =[];
 
 function addNumber(){
-    let txtNumber = document.getElementById("number");
+    const txtNumber = document.getElementById("number");
     
-    let number = Number(txtNumber.value);
+    const number = Number(txtNumber.value);
     
-    let numList = document.createElement('option');
+    const numList = document.createElement('option');
 
-    let list = document.getElementById('conjuntoDeNumeros');
+    const list = document.getElementById('conjuntoDeNumeros');
 
-       
+    const resultado = document.getElementById('result');
+
     
     if(txtNumber.value.length == 0 ||number <= 0 || number > 100 ){
         alert('Valor inválido ou já existente na lista.');
@@ -24,23 +25,25 @@ function addNumber(){
         alert('Valor já se encontra na lista favor digite outro valor');
         txtNumber.value = '';
     }
-    let resultado = document.getElementById('result');
+
     resultado.innerHTML ='';
 }
 
 function check(){
-    let resultado = document.getElementById('result');
+    const resultado = document.getElementById('result');
+
+    const res1 = document.createElement('p');
+    const res2 = document.createElement('p');
+    const res3 = document.createElement('p');
+    const res4 = document.createElement('p');
+    const res5 = document.createElement('p');
+
+    const max = Math.max(...valores);
+    const min = Math.min(...valores);
+    let soma = 0;
+
     resultado.innerHTML ='';
 
-    let res1 = document.createElement('p');
-    let res2 = document.createElement('p');
-    let res3 = document.createElement('p');
-    let res4 = document.createElement('p');
-    let res5 = document.createElement('p');
-
-    let max = Math.max(...valores);
-    let min = Math.min(...valores);
-    let soma = 0;
     for(let i = 0; i < valores.length; i++){
         soma += valores[i];
     }
