@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(70, 142, 236);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow:  3px 3px 10px rgba(0, 0, 0, 0.363);
+
+}
+
+#one{
+    margin-bottom: 20px;
+}
+
+select {
+    min-width: 30%;
+}
+
+.butVerificar{
+    display: block;
+    margin-top: 5px;
+}
+
+#result{
+    text-align: center;
+    font-style: italic;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+strong{
+    color: red;
+    font-style: italic;
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 380px) {
+    section {
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        width: 315px;
+        margin: auto;
+        box-shadow:  3px 3px 10px rgba(0, 0, 0, 0.363);
+    
+    }
+
+    #result{
+        text-align: center;
+        font-style: italic;
+        font-size: 1rem;
+    }
+
+    .butVerificar{
+        display: block;
+        margin-top: 5px;
+        width: 190px;
+        height: 30px;
+    }
+
+    .addBut{
+        width: 120px;
+        height: 30px;
+    }
+}
